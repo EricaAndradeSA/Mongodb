@@ -8,8 +8,8 @@ app.get("/", async(req, res) => {
 })
 
 app.post("/", async(req, res) => {
-    const {nome, email, mensagem} = req.body
-    let resultado = await comentarios.create({nome, email, mensagem})
+    const {nome, mensagem} = req.body
+    let resultado = await comentarios.create({nome, mensagem})
 
     res.json(resultado)
 })

@@ -6,10 +6,6 @@ const comentarioSchema = new Schema ({
         type: String
     },
 
-    email:{
-        type: String
-    },
-
     mensagem:{
         type: String
     },
